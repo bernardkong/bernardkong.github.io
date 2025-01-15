@@ -1,0 +1,222 @@
+:root {
+    /* Color Variables */
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --white: #fff;
+    --light-gray: #f8f9fa;
+    --border-color: rgba(0, 0, 0, 0.125);
+    --shadow-color: rgba(0, 0, 0, 0.05);
+    --hover-shadow: rgba(0, 0, 0, 0.15);
+}
+
+/* Base Styles */
+body {
+    background-color: var(--background-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 80px; /* Space for fixed bottom nav */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Navigation Styles */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.navbar-brand {
+    color: var(--white) !important;
+    font-weight: 500;
+}
+
+.navbar-brand img {
+    height: 120px;
+    margin-right: 10px;
+    display: block;
+}
+
+.nav-link {
+    color: var(--white) !important;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Header Section */
+.header-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.header-section h1, .header-section h2 {
+    color: var(--white);
+    margin: 0;
+}
+
+.header-section p {
+    margin: 10px 0 0 0;
+    opacity: 0.9;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 0 20px var(--shadow-color);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px var(--hover-shadow);
+}
+
+.card-header {
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 15px 15px 0 0 !important;
+    padding: 1rem;
+    border: none;
+}
+
+.card-header h4 {
+    margin: 0;
+    color: var(--white);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--hover-shadow);
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-info {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--white);
+}
+
+.btn-info:hover {
+    background-color: #2980b9;
+    color: var(--white);
+}
+
+/* List Group Styles */
+.list-group-item {
+    border: none;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background: var(--light-gray);
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+.detail-icon {
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+/* Form Styles */
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.form-label {
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -2px 4px var(--shadow-color);
+    z-index: 1000;
+}
+
+.bottom-nav-logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 1rem;
+}
+
+/* Utility Classes */
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .navbar-brand img {
+        height: 80px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+    }
+}

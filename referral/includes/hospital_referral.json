@@ -1,0 +1,86 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"hospital_referral"},
+{"type":"table","name":"clinics","database":"hospital_referral","data":
+[
+{"id":"1","name":"wtc mediclinic","address":"wtc","phone":"60126719897","email":"kesc@qmed.asia","is_active":"1","created_at":"2024-12-16 19:03:05"},
+{"id":"2","name":"myclinic","address":"myclinic","phone":"01287878787","email":"kasd@asad.xoa","is_active":"1","created_at":"2024-12-16 19:03:50"}
+]
+}
+,{"type":"table","name":"departments","database":"hospital_referral","data":
+[
+{"id":"1","name":"Cardiology","description":"Specializes in diagnosing and treating heart conditions and cardiovascular diseases.","status":"active","created_at":"2024-12-16 17:09:24","updated_at":"2024-12-16 17:09:24"},
+{"id":"2","name":"Neurology","description":"Focuses on disorders of the nervous system, including brain and spinal cord.","status":"active","created_at":"2024-12-16 17:09:24","updated_at":"2024-12-16 17:09:24"},
+{"id":"3","name":"Orthopedics","description":"Deals with conditions involving the musculoskeletal system.","status":"active","created_at":"2024-12-16 17:09:24","updated_at":"2024-12-16 17:09:24"},
+{"id":"4","name":"Pediatrics","description":"Provides medical care for infants, children, and adolescents.","status":"active","created_at":"2024-12-16 17:09:24","updated_at":"2024-12-16 17:09:24"},
+{"id":"5","name":"Oncology","description":"Specializes in the diagnosis and treatment of cancer.","status":"active","created_at":"2024-12-16 17:09:24","updated_at":"2024-12-16 17:09:24"},
+{"id":"6","name":"Emergency Medicine","description":"Provides immediate medical attention for acute illnesses and injuries.","status":"active","created_at":"2024-12-16 17:09:24","updated_at":"2024-12-16 17:09:24"},
+{"id":"7","name":"Internal Medicine","description":"Deals with the prevention, diagnosis, and treatment of adult diseases.","status":"active","created_at":"2024-12-16 17:09:24","updated_at":"2024-12-16 17:09:24"},
+{"id":"8","name":"Dermatology","description":"Focuses on conditions affecting the skin, hair, and nails.","status":"active","created_at":"2024-12-16 17:09:24","updated_at":"2024-12-16 17:09:24"},
+{"id":"9","name":"Psychiatry","description":"Specializes in the diagnosis, treatment, and prevention of mental disorders.","status":"active","created_at":"2024-12-16 17:09:24","updated_at":"2024-12-16 17:09:24"},
+{"id":"10","name":"GP","description":"GP","status":"active","created_at":"2024-12-16 17:23:44","updated_at":"2024-12-16 17:23:44"}
+]
+}
+,{"type":"table","name":"gp_doctors","database":"hospital_referral","data":
+[
+{"id":"1","gp_name":"dr tai","login":"drtai","password":"88888888","phone":"1231","certification":"Fammed","mmc_no":"57183","is_active":"1","clinic_id":"1","created_at":"2024-12-16 19:22:56","updated_at":"2024-12-16 19:22:56"},
+{"id":"2","gp_name":"Dr Elon Tai","login":"drelon","password":"88888888","phone":"+60126719897","certification":"GP","mmc_no":"101575","is_active":"1","clinic_id":"2","created_at":"2024-12-16 23:04:05","updated_at":"2024-12-16 23:04:05"}
+]
+}
+,{"type":"table","name":"honour_points","database":"hospital_referral","data":
+[
+{"id":"1","gp_id":"1","points":"0","level":"Bronze","total_referrals":"0","successful_referrals":"0","created_at":"2024-12-17 00:45:49","updated_at":"2024-12-17 00:45:49"}
+]
+}
+,{"type":"table","name":"patients","database":"hospital_referral","data":
+[
+{"id":"1","name":"Ahmad bin Abdullah","date_of_birth":"1980-05-15","ic_number":"800515-14-5543","contact_number":"012-345-6789","email":"ahmad.abdullah@email.com","address":"No 123, Jalan Merdeka 1\/3, Taman Merdeka, 43650 Bandar Baru Bangi, Selangor","created_at":"2024-12-16 21:31:11"},
+{"id":"2","name":"Siti Nurhayati binti Ibrahim","date_of_birth":"1992-08-22","ic_number":"920822-10-5566","contact_number":"019-876-5432","email":"siti.nur@email.com","address":"No 45, Lorong Sentosa 2, Taman Sentosa, 14000 Bukit Mertajam, Penang","created_at":"2024-12-16 21:31:11"},
+{"id":"3","name":"Muhammad Hafiz bin Ismail","date_of_birth":"1975-03-10","ic_number":"750310-08-5789","contact_number":"013-777-8899","email":"hafiz.ismail@email.com","address":"No 67, Jalan Harmoni 3, Taman Harmoni, 81300 Skudai, Johor","created_at":"2024-12-16 21:31:11"},
+{"id":"4","name":"Nurul Aina binti Hassan","date_of_birth":"1988-11-30","ic_number":"881130-06-5432","contact_number":"017-555-4444","email":"nurul.aina@email.com","address":"No 89, Jalan Mawar 5, Taman Mawar, 25200 Kuantan, Pahang","created_at":"2024-12-16 21:31:11"},
+{"id":"5","name":"Lee Wei Ming","date_of_birth":"1995-07-18","ic_number":"950718-04-5673","contact_number":"016-222-3333","email":"weiming.lee@email.com","address":"No 12, Jalan Kota 2\/5, Taman Kota, 41000 Klang, Selangor","created_at":"2024-12-16 21:31:11"},
+{"id":"6","name":"Tan Mei Ling","date_of_birth":"1983-01-25","ic_number":"830125-14-5889","contact_number":"014-999-8888","email":"meiling.tan@email.com","address":"No 34, Jalan Indah 7, Taman Indah, 88300 Kota Kinabalu, Sabah","created_at":"2024-12-16 21:31:11"},
+{"id":"7","name":"Raj Kumar a\/l Subramaniam","date_of_birth":"1970-09-05","ic_number":"700905-08-5231","contact_number":"012-888-7777","email":"raj.kumar@email.com","address":"No 56, Jalan Damai 3, Taman Damai, 31350 Ipoh, Perak","created_at":"2024-12-16 21:31:11"},
+{"id":"8","name":"Nur Fatimah binti Zainuddin","date_of_birth":"1990-04-12","ic_number":"900412-01-5445","contact_number":"019-333-2222","email":"fatimah.z@email.com","address":"No 78, Lorong Bahagia 4, Taman Bahagia, 93100 Kuching, Sarawak","created_at":"2024-12-16 21:31:11"},
+{"id":"9","name":"Wong Kai Xin","date_of_birth":"1978-12-08","ic_number":"781208-12-5667","contact_number":"017-444-5555","email":"kaixin.wong@email.com","address":"No 90, Jalan Setia 6, Taman Setia, 20400 Kuala Terengganu, Terengganu","created_at":"2024-12-16 21:31:11"},
+{"id":"10","name":"Aisha binti Mohamed","date_of_birth":"1987-06-20","ic_number":"870620-14-5221","contact_number":"013-666-7777","email":"aisha.mohamed@email.com","address":"No 123, Jalan Perdana 8, Taman Perdana, 05100 Alor Setar, Kedah","created_at":"2024-12-16 21:31:11"},
+{"id":"12","name":"Tai tzyy jiun","date_of_birth":"1987-06-24","ic_number":"870624-23-5043","contact_number":"12-6719 879","email":"asdasd@asdjkah.com","address":"asdad","created_at":"2024-12-16 22:30:07"},
+{"id":"13","name":"sim hui xin ","date_of_birth":"1987-06-24","ic_number":"870624-20-0111","contact_number":"12-8123 781","email":"lkasjdkl@kasjdklj.con","address":"askldj","created_at":"2024-12-16 22:37:34"},
+{"id":"14","name":"Tai tzyy jiun","date_of_birth":"1987-06-24","ic_number":"870624-52-7465","contact_number":"12-8172 837","email":"123@aslkdj.com","address":"asdasd","created_at":"2024-12-16 22:45:13"},
+{"id":"15","name":"alksdjkla","date_of_birth":"1987-06-24","ic_number":"870624-23-5045","contact_number":"12-1098 237","email":"asd@123.com","address":"asdasd","created_at":"2024-12-16 23:50:31"},
+{"id":"17","name":"asdasd","date_of_birth":"1987-06-22","ic_number":"870622-35-0444","contact_number":"+60126719897","email":"klasdj@m.com","address":"asd","created_at":"2024-12-16 23:55:15"}
+]
+}
+,{"type":"table","name":"points_history","database":"hospital_referral","data":
+[
+
+]
+}
+,{"type":"table","name":"referrals","database":"hospital_referral","data":
+[
+{"id":"1","patient_id":"12","referring_gp_id":"1","department_id":"1","priority_level":"routine","status":"pending","notes":"asd","created_at":"2024-12-16 22:30:07","updated_at":"2024-12-16 22:36:43","specialist_id":"2"},
+{"id":"2","patient_id":"13","referring_gp_id":"1","department_id":"5","priority_level":"routine","status":"pending","notes":"14asd","created_at":"2024-12-16 22:37:34","updated_at":"2024-12-16 23:41:38","specialist_id":"3"},
+{"id":"3","patient_id":"14","referring_gp_id":"1","department_id":"7","priority_level":"routine","status":"pending","notes":"asd","created_at":"2024-12-16 22:45:13","updated_at":"2024-12-16 22:45:13","specialist_id":"8"},
+{"id":"4","patient_id":"15","referring_gp_id":"1","department_id":"7","priority_level":"routine","status":"pending","notes":"asd","created_at":"2024-12-16 23:50:31","updated_at":"2024-12-16 23:50:31","specialist_id":"8"},
+{"id":"5","patient_id":"17","referring_gp_id":"2","department_id":"7","priority_level":"routine","status":"pending","notes":"asdasd","created_at":"2024-12-16 23:55:15","updated_at":"2024-12-16 23:55:15","specialist_id":"8"}
+]
+}
+,{"type":"table","name":"specialists","database":"hospital_referral","data":
+[
+{"id":"2","nsr_number":"NSR\/12346","name":"Dr. Siti Nurul Huda binti Hassan","department_id":"2","specialization":"Neurological Surgery","email":"siti.huda@hospital.com","phone":"013-9876543","status":"active","created_at":"2024-12-16 17:11:18","updated_at":"2024-12-16 17:11:18"},
+{"id":"3","nsr_number":"NSR\/12347","name":"Dr. Raj Kumar a\/l Subramaniam","department_id":"3","specialization":"Sports Medicine & Orthopedic Surgery","email":"raj.kumar@hospital.com","phone":"019-8765432","status":"active","created_at":"2024-12-16 17:11:18","updated_at":"2024-12-16 17:11:18"},
+{"id":"4","nsr_number":"NSR\/12348","name":"Dr. Lee Wei Ming","department_id":"4","specialization":"Pediatric Oncology","email":"wei.ming@hospital.com","phone":"016-7654321","status":"active","created_at":"2024-12-16 17:11:18","updated_at":"2024-12-16 17:11:18"},
+{"id":"5","nsr_number":"NSR\/12349","name":"Dr. Nurul Ain binti Abdullah","department_id":"5","specialization":"Medical Oncology","email":"nurul.ain@hospital.com","phone":"014-5432198","status":"active","created_at":"2024-12-16 17:11:18","updated_at":"2024-12-16 17:11:18"},
+{"id":"6","nsr_number":"NSR\/12350","name":"Dr. Tan Cheng Huat","department_id":"1","specialization":"Cardiac Electrophysiology","email":"chenghuat.tan@hospital.com","phone":"012-8765432","status":"active","created_at":"2024-12-16 17:11:18","updated_at":"2024-12-16 17:11:18"},
+{"id":"7","nsr_number":"NSR\/12351","name":"Dr. Aisha binti Mohamed","department_id":"6","specialization":"Emergency Medicine","email":"aisha.mohamed@hospital.com","phone":"019-2345678","status":"active","created_at":"2024-12-16 17:11:18","updated_at":"2024-12-16 17:11:18"},
+{"id":"8","nsr_number":"NSR\/12352","name":"Dr. Kumar Ramachandran","department_id":"7","specialization":"Gastroenterology","email":"kumar.rama@hospital.com","phone":"017-3456789","status":"active","created_at":"2024-12-16 17:11:18","updated_at":"2024-12-16 22:40:06"},
+{"id":"9","nsr_number":"NSR\/12353","name":"Dr. Wong Mei Ling","department_id":"8","specialization":"Clinical Dermatology","email":"meiling.wong@hospital.com","phone":"012-9876543","status":"active","created_at":"2024-12-16 17:11:18","updated_at":"2024-12-16 17:11:18"},
+{"id":"10","nsr_number":"NSR\/12354","name":"Dr. Mohd Faizal bin Ismail","department_id":"9","specialization":"Child & Adolescent Psychiatry","email":"faizal.ismail@hospital.com","phone":"013-8765432","status":"active","created_at":"2024-12-16 17:11:18","updated_at":"2024-12-16 17:11:18"}
+]
+}
+,{"type":"table","name":"users","database":"hospital_referral","data":
+[
+{"id":"4","username":"drtai","password":"88888888","role":"doctor","created_at":"2024-12-16 16:58:19","clinic_id":null}
+]
+}
+]
